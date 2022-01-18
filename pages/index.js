@@ -252,7 +252,7 @@ export default function Home() {
           <h1 className='text-3xl font-bold mb-5'>Highscores</h1>
           {scorecard.map((list, index) => {
             return (
-              <p>{index + 1}. {list.name} - {list.score}</p>
+              <p key={list.name}>{index + 1}. {list.name} - {list.score}</p>
             )
           })}
           <div className='mt-3'>
