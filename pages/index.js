@@ -119,7 +119,7 @@ export default function Home() {
       </header>
       {/* Navbar ends*/}
       {step == 0 &&
-        <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl'>
+        <div className='mx-auto mt-[22vh] bg-white shadow-xl w-8/12 p-10 rounded-2xl cursor-pointer'>
           <h1 className='text-3xl font-bold mb-5'>Coding Quiz Challenge</h1>
           <p className='font-medium my-3 text-md'>Try to answer the following code-related questions within the time limit.</p>
           <p className='font-medium my-3 text-md'>Keep in mind that incorrect answers will penalize your your score/time by ten seconds!</p>
@@ -131,7 +131,7 @@ export default function Home() {
 
           {QuesNo == 1 &&
             <div>
-              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl'>
+              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl cursor-pointer'>
                 <h1 className='text-3xl font-bold mb-5'>Commonly used data types DO NOT include: </h1>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={wrongAns}><p className='font-medium text-md ml-1'>1. Strings</p></div>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={wrongAns}><p className='font-medium text-md ml-1'>2. booleans</p></div>
@@ -152,7 +152,7 @@ export default function Home() {
           }
           {QuesNo == 2 &&
             <div>
-              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl'>
+              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl cursor-pointer'>
                 <h1 className='text-3xl font-bold mb-5'>Arrays in javascript can be used to store: </h1>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={correctAns}><p className='font-medium text-md ml-1'>1. Number & Strings</p></div>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={wrongAns}><p className='font-medium text-md ml-1'>2. Other Arrays</p></div>
@@ -173,7 +173,7 @@ export default function Home() {
           }
           {QuesNo == 3 &&
             <div>
-              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl'>
+              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl cursor-pointer'>
                 <h1 className='text-3xl font-bold mb-5'>What is the size of an int data type? </h1>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={wrongAns}><p className='font-medium text-md ml-1'>1. 4 Bytes</p></div>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={wrongAns}><p className='font-medium text-md ml-1'>2. 8 Bytes</p></div>
@@ -194,7 +194,7 @@ export default function Home() {
           }
           {QuesNo == 4 &&
             <div>
-              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl'>
+              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl cursor-pointer'>
                 <h1 className='text-3xl font-bold mb-5'>Which of the datatypes have size that is variable? </h1>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={wrongAns}><p className='font-medium text-md ml-1'>1. int</p></div>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={correctAns}><p className='font-medium text-md ml-1'>2. struct</p></div>
@@ -216,7 +216,7 @@ export default function Home() {
           }
           {QuesNo == 5 &&
             <div>
-              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl'>
+              <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl cursor-pointer'>
                 <h1 className='text-3xl font-bold mb-5'>A standardized language used for commercial applications. </h1>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={correctAns}><p className='font-medium text-md ml-1'>1. C</p></div>
                 <div className='p-2 rounded-md text-white bg-emerald my-2' onClick={wrongAns}><p className='font-medium text-md ml-1'>2. Java</p></div>
@@ -236,7 +236,7 @@ export default function Home() {
             </div>
             //Scorecard 
           }            {QuesNo == 6 &&
-            <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl'>
+            <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl cursor-pointer'>
               <h1 className='text-3xl font-bold mb-5'>All Done!</h1>
               <p className='font-medium my-3 text-md'>Your final score is {score}</p>
               <span>
@@ -251,7 +251,7 @@ export default function Home() {
         //HIghscore
       }
       {Highscore == true &&
-        <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl'>
+        <div className='mx-auto mt-[22vh] bg-white shadow-xl w-10/12 p-10 rounded-2xl cursor-pointer'>
           <h1 className='text-3xl font-bold mb-5'>Highscores</h1>
           {scorecard.map((list, index) => {
             return (
