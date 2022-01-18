@@ -40,12 +40,14 @@ export default function Home() {
     setQuesNo(QuesNo = QuesNo + 1)
     setAns(Ans = false)
     setwrong(true)
+    setTimeout(() => {setAns(undefined)},1000)
   }
   //for pressing correct ans
   const correctAns = () => {
     setQuesNo(QuesNo = QuesNo + 1)
     setAns(Ans = true)
     setscore(score = score + 10)
+    setTimeout(() => {setAns(undefined)},1000)
   }
   //for starting timer when to start answering
   const handleTimerStart = () => {
@@ -92,7 +94,6 @@ export default function Home() {
     setHighscore(true)
     setQuesNo(undefined)
   }
-
 
 
   return (
@@ -257,7 +258,7 @@ export default function Home() {
           })}
           <div className='mt-3'>
             <button className='bg-emerald px-4 py-2 rounded-md text-white mt-2 mr-2' onClick={goback}> Go back</button>
-            <button className='bg-emerald px-4 py-2 rounded-md text-white mt-2 ml-2' onClick={handleClearHighScore}> Clear Highscores</button>
+            <button className='bg-emerald px-4 py-2 rounded-md text-white mt-2 ml-0 sm:ml-2' onClick={handleClearHighScore}> Clear Highscores</button>
           </div>
         </div>
 
